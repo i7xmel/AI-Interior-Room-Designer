@@ -6,7 +6,24 @@ Everything runs **100% locally** on your own machine — no cloud APIs, no subsc
 
 ---
 
-## 🎯 Who is this for?
+# Demo
+
+<img width="800" height="379" alt="8" src="https://github.com/user-attachments/assets/b25037dd-263b-4396-aacd-f543a4388543" />
+<img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/8f49fcf0-0520-42ec-954e-1537bb67ed25" />
+<img width="800" height="366" alt="2" src="https://github.com/user-attachments/assets/fa6e36e3-a838-4bf1-b63d-2e6fc4afb1d7" />
+<img width="800" height="366" alt="3" src="https://github.com/user-attachments/assets/473ce4fd-b914-4dcc-8619-efd2adb9173b" />
+<img width="800" height="312" alt="4" src="https://github.com/user-attachments/assets/d1e8f49e-9099-489a-8ec2-0fb506bbec74" />
+<img width="800" height="376" alt="5" src="https://github.com/user-attachments/assets/e124dbfe-e974-4d45-80da-d27b3a4f4bb7" />
+<img width="800" height="376" alt="6" src="https://github.com/user-attachments/assets/ddeac52a-16c0-48b8-8d12-aadbff227bf6" />
+<img width="800" height="376" alt="7" src="https://github.com/user-attachments/assets/46b3a243-a24e-49bf-87c2-dacbe517e554" />
+<img width="800" height="381" alt="loading1" src="https://github.com/user-attachments/assets/8d7b5022-1291-4e6a-bbaf-9b8440f40baf" />
+<img width="800" height="372" alt="loading3" src="https://github.com/user-attachments/assets/8e387f7a-5c3c-4c90-9b01-1d13654d3eca" />
+<img width="800" height="200" alt="backend" src="https://github.com/user-attachments/assets/e91dc4f9-37dc-4137-956a-d4fe051b1d25" />
+<img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/2f29593c-8d41-4a89-8786-69d31083c877" />
+
+
+
+##  Who is this for?
 
 - **Interior designers** — mock up a client's room, drop in real furniture from catalogue photos, and walk the client through a live 3D preview instead of static mood boards.
 - **Homeowners & renters** — "will that sofa from the listing actually fit next to my window?" Upload the listing photo and find out.
@@ -15,19 +32,19 @@ Everything runs **100% locally** on your own machine — no cloud APIs, no subsc
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🏠 The Room
+###  The Room
 - A real **3D box room** — floor, ceiling, back wall, left wall, right wall, with an **open front** so you always have a clean view in.
 - **Full orbit controls** — rotate, pan, and zoom around (and into) the room freely. Walls are solid: objects inside the room are correctly hidden when you view the box from outside.
 - **Adjustable room dimensions** — live sliders for **width, height, and depth**. When you resize the room, every placed 3D object **rescales and repositions proportionally and precisely**, so a window you fixed on the back wall *stays* on the back wall, exactly where you put it.
 - **Adjustable wall thickness** (0.02 m – 0.6 m) — controls how deep objects can be embedded into walls.
 
-### 🖼️ Surface Texturing
+###  Surface Texturing
 - Upload **any image** as the texture for the **floor, ceiling, back wall, left wall, or right wall** — each surface has its own upload slot and an independent show/hide toggle.
 - Textures are applied flat to the surface, exactly like wallpaper / flooring.
 
-### 🪄 2D → 3D Generation (the magic part)
+###  2D → 3D Generation (the magic part)
 Two complementary workflows, both powered by **Tencent Hunyuan3D-2** running locally:
 
 1. **Generate from a surface texture** — uploaded a wall image that contains a window, a painting, a wall lamp? Draw a **bounding box** around that part of the image and the app converts *just that region* into a real 3D model, then **places it at the exact corresponding position** on that wall in the 3D room.
@@ -35,7 +52,7 @@ Two complementary workflows, both powered by **Tencent Hunyuan3D-2** running loc
 
 Backgrounds are removed automatically (rembg/u2net) before generation, and each generated mesh receives an **AI-generated texture** from Hunyuan3D-Paint so it looks like the photo, not a grey blob.
 
-### 🎛️ Total Control over Every Object
+###  Total Control over Every Object
 Every generated 3D object is fully flexible. Two ways to control it:
 
 **A. Directly in the 3D viewport** — click an object to select it and a gizmo toolbar appears:
@@ -54,7 +71,7 @@ Every generated 3D object is fully flexible. Two ways to control it:
 - **Rotation** — Pitch / Yaw / Roll in **degrees**, plus quick buttons **⟲ 90° / 90° ⟳ / Flip / 0°** that automatically rotate around the correct axis for whatever surface the object is attached to.
 - Show/hide toggle and delete per object; *Clear all* for the whole scene.
 
-### 💡 Room Lighting
+###  Room Lighting
 - **On/Off switch** for the interior lights (a faint ambient stays on so the room never goes pitch black).
 - **Three colour temperatures** — **Warm** (~2700 K cosy incandescent), **Neutral** (daylight white), **Cool** (~7000 K crisp blue-white) — selectable with one click.
 - **Brightness slider** (0–3×) scaling the whole interior light rig: ceiling key light, front fill, side bounce lights, and ambient together.
@@ -63,7 +80,7 @@ Every generated 3D object is fully flexible. Two ways to control it:
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 
 ```
 ┌────────────────────────┐   HTTP (JSON/base64)    ┌──────────────────────────┐
@@ -99,7 +116,7 @@ room3d-viewer/
 
 ---
 
-## 🤖 The AI models
+##  The AI models
 
 | Role | Model | Size | Why this one |
 |---|---|---|---|
@@ -131,7 +148,7 @@ So the very first `/generate` and `/texture` calls will be slow (several GB of d
 
 ---
 
-## 🚀 Installation (Windows, step by step)
+##  Installation (Windows, step by step)
 
 ### Prerequisites
 | Tool | Version | Notes |
@@ -218,7 +235,7 @@ cd D:\AI-Interior-Room-Designer
 npm install
 ```
 
-### 9. Run it 🎉
+### 9. Run it 
 Two terminals:
 
 **Terminal 1 — backend:**
@@ -239,7 +256,7 @@ The first generation downloads several GB of model weights from Hugging Face int
 
 ---
 
-## 🕹️ Quick usage walkthrough
+##  Quick usage walkthrough
 
 1. **Set up the room** — drag the Width / Height / Depth sliders; upload textures to any of the five surfaces via their tabs.
 2. **Make something 3D from a wall** — on a surface tab, click-drag a box around an object in the texture image (e.g. a window) and hit **Run**. After generation it appears at the matching spot on that wall.
@@ -250,7 +267,7 @@ The first generation downloads several GB of model weights from Hugging Face int
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 | Symptom | Fix |
 |---|---|
@@ -264,7 +281,7 @@ The first generation downloads several GB of model weights from Hugging Face int
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 - **[Tencent Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)** — the shape (Hunyuan3D-DiT) and texture (Hunyuan3D-Paint) models that make the 2D→3D magic possible. Please check and respect their model license for your use case.
 - [Next.js](https://nextjs.org/) · [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) · [drei](https://github.com/pmndrs/drei) · [three.js](https://threejs.org/) · [zustand](https://github.com/pmndrs/zustand) · [Tailwind CSS](https://tailwindcss.com/)
