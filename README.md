@@ -8,18 +8,18 @@ Everything runs **100% locally** on your own machine — no cloud APIs, no subsc
 
 # Demo
 
-<img width="800" height="379" alt="8" src="https://github.com/user-attachments/assets/b25037dd-263b-4396-aacd-f543a4388543" />
 <img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/8f49fcf0-0520-42ec-954e-1537bb67ed25" />
+<img width="800" height="376" alt="7" src="https://github.com/user-attachments/assets/46b3a243-a24e-49bf-87c2-dacbe517e554" />
 <img width="800" height="366" alt="2" src="https://github.com/user-attachments/assets/fa6e36e3-a838-4bf1-b63d-2e6fc4afb1d7" />
 <img width="800" height="366" alt="3" src="https://github.com/user-attachments/assets/473ce4fd-b914-4dcc-8619-efd2adb9173b" />
 <img width="800" height="312" alt="4" src="https://github.com/user-attachments/assets/d1e8f49e-9099-489a-8ec2-0fb506bbec74" />
 <img width="800" height="376" alt="5" src="https://github.com/user-attachments/assets/e124dbfe-e974-4d45-80da-d27b3a4f4bb7" />
 <img width="800" height="376" alt="6" src="https://github.com/user-attachments/assets/ddeac52a-16c0-48b8-8d12-aadbff227bf6" />
-<img width="800" height="376" alt="7" src="https://github.com/user-attachments/assets/46b3a243-a24e-49bf-87c2-dacbe517e554" />
+<img width="800" height="379" alt="8" src="https://github.com/user-attachments/assets/b25037dd-263b-4396-aacd-f543a4388543" />
 <img width="800" height="381" alt="loading1" src="https://github.com/user-attachments/assets/8d7b5022-1291-4e6a-bbaf-9b8440f40baf" />
 <img width="800" height="372" alt="loading3" src="https://github.com/user-attachments/assets/8e387f7a-5c3c-4c90-9b01-1d13654d3eca" />
 <img width="800" height="200" alt="backend" src="https://github.com/user-attachments/assets/e91dc4f9-37dc-4137-956a-d4fe051b1d25" />
-<img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/2f29593c-8d41-4a89-8786-69d31083c877" />
+
 
 
 
