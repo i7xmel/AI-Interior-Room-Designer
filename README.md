@@ -8,7 +8,7 @@ Everything runs **100% locally** on your own machine — no cloud APIs, no subsc
 
 # Demo
 
-<img width="1262" height="568" alt="image" src="https://github.com/user-attachments/assets/c4bbb801-c300-46c9-9960-dbd800217d2c" />
+<img width="1062" height="568" alt="image" src="https://github.com/user-attachments/assets/c4bbb801-c300-46c9-9960-dbd800217d2c" />
 <img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/8f49fcf0-0520-42ec-954e-1537bb67ed25" />
 <img width="800" height="376" alt="6" src="https://github.com/user-attachments/assets/ddeac52a-16c0-48b8-8d12-aadbff227bf6" />
 <img width="800" height="366" alt="2" src="https://github.com/user-attachments/assets/fa6e36e3-a838-4bf1-b63d-2e6fc4afb1d7" />
