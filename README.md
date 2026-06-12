@@ -8,7 +8,7 @@ Everything runs **100% locally** on your own machine — no cloud APIs, no subsc
 
 # Demo
 
-<img width="1062" height="568" alt="image" src="https://github.com/user-attachments/assets/c4bbb801-c300-46c9-9960-dbd800217d2c" />
+<img width="1135" height="568" alt="image" src="https://github.com/user-attachments/assets/c4bbb801-c300-46c9-9960-dbd800217d2c" />
 <img width="800" height="366" alt="1" src="https://github.com/user-attachments/assets/8f49fcf0-0520-42ec-954e-1537bb67ed25" />
 <img width="800" height="376" alt="6" src="https://github.com/user-attachments/assets/ddeac52a-16c0-48b8-8d12-aadbff227bf6" />
 <img width="800" height="366" alt="2" src="https://github.com/user-attachments/assets/fa6e36e3-a838-4bf1-b63d-2e6fc4afb1d7" />
@@ -288,8 +288,8 @@ The first generation downloads several GB of model weights from Hugging Face int
 - [Next.js](https://nextjs.org/) · [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) · [drei](https://github.com/pmndrs/drei) · [three.js](https://threejs.org/) · [zustand](https://github.com/pmndrs/zustand) · [Tailwind CSS](https://tailwindcss.com/)
 - [Flask](https://flask.palletsprojects.com/) · [trimesh](https://trimesh.org/) · [rembg](https://github.com/danielgatis/rembg) · [fast_simplification](https://github.com/pyvista/fast-simplification)
 
-## 📬 Contact
+## Contact
 
 Anyone is welcome to clone this repo and build on it. Questions, ideas, or collaboration:
 
-**📧 ismaeeel.basheer@gmail.com**
+**ismaeeel.basheer@gmail.com**
