@@ -1,0 +1,43 @@
+﻿# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+.vercel/
+npm-debug.log*
+yarn-error.log*
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ---- Environment (keep .env.example, hide real .env) ----
+.env
+.env.local
+.env.*.local
+
+# ---- AI model weights / caches (NEVER commit these — multi-GB) ----
+*.safetensors
+*.ckpt
+*.pth
+*.bin
+*.glb
+*.obj
+weights/
+models/
+.cache/
+
+# ---- OS / editor noise ----
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# ---- Build artefacts ----
+dist/
+build/
+*.log
+structure.txt

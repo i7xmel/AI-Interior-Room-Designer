@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a26;
+  --bg-elevated: #242436;
+  --border-color: #2e2e44;
+  --text-primary: #e4e4ef;
+  --text-secondary: #8888a8;
+  --text-dim: #55557a;
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warn: #f59e0b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+.room-canvas { width: 100%; height: 100%; display: block; }
+
+.panel-glass {
+  background: rgba(18, 18, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+}
+
+.surface-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.surface-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-primary {
+  background: var(--accent); color: #fff; border: none;
+  padding: 8px 16px; border-radius: 6px; font-family: inherit;
+  font-weight: 500; font-size: 13px; cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+.btn-ghost {
+  background: transparent; color: var(--text-secondary);
+  border: 1px solid var(--border-color); padding: 6px 12px;
+  border-radius: 6px; font-family: inherit; font-weight: 400;
+  font-size: 12px; cursor: pointer; transition: all 0.2s ease;
+}
+.btn-ghost:hover { border-color: var(--text-secondary); color: var(--text-primary); }
+
+.badge {
+  display: inline-flex; align-items: center; padding: 2px 8px;
+  border-radius: 100px; font-size: 11px; font-weight: 500; letter-spacing: 0.02em;
+}
+.badge-idle { background: rgba(136,136,168,0.1); color: var(--text-secondary); }
+.badge-generating { background: rgba(99,102,241,0.15); color: var(--accent-light); }
+.badge-done { background: rgba(34,197,94,0.1); color: var(--success); }
+.badge-error { background: rgba(239,68,68,0.1); color: var(--danger); }
+
+@keyframes room3d-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.spinner { animation: room3d-spin 1s linear infinite; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+
+@keyframes pulseRing { 0% { transform: scale(0.9); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.2; } 100% { transform: scale(0.9); opacity: 0.5; } }
+.pulse-ring { animation: pulseRing 2s ease-in-out infinite; }
